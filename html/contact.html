@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="/assets/images/logo.svg"
+            alt="logo"
+            width="100"
+            height="100"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/portfolio.html">portfolio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                projecten
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/html/projecten.html"
+                    >Alle projecten</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="/html/project1.html"
+                    >Project 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/html/project2.html"
+                    >Project 2</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Project 3</a></li>
+                <li><a class="dropdown-item" href="#">Project 4</a></li>
+                <li><a class="dropdown-item" href="#">Project 5</a></li>
+                <li><a class="dropdown-item" href="#">Project 6</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-white text-black py-4">
+      <div class="container text-center">
+        <h1>Contacteer mij</h1>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="container py-5">
+      <div class="row">
+        <!-- Linkerkant: Invulformulier -->
+        <div class="col-md-6 p-4 border-end">
+          <h2>Vul het formulier in</h2>
+          <p>
+            Ben je geïnteresseerd in een samenwerking of wil je meer weten over
+            mijn vaardigheden en ervaring? Aarzel dan niet om contact met mij op
+            te nemen via het onderstaande formulier.
+          </p>
+
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label">Naam</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Onderwerp</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                name="subject"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Bericht</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Verstuur</button>
+          </form>
+          <p>
+            Wij respecteren je privacy. De gegevens die je invult, worden alleen
+            gebruikt om jouw vraag te beantwoorden.
+          </p>
+        </div>
+
+        <aside class="col-md-6 p-4">
+          <h2>Contactgegevens</h2>
+          <p>
+            <i class="bi bi-telephone-fill fs-5 me-2 text-primary"></i> +32
+            486260395<br />
+            <i class="bi bi-envelope-fill fs-5 me-2 text-primary"></i>
+            <a href="mailto:Anouar.abillouch@gmail.com" class="text-primary"
+              >Anouar.abillouch@gmail.com</a
+            >
+          </p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/feed/" target="_blank">
+                <i class="bi bi-linkedin fs-4"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram fs-4"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook fs-4"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-custom"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <!-- Corrected use of the Bootstrap icon -->
+            <use href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="text-muted"
+          ><p>© 2024 Anouar Abillouch. Alle rechten voorbehouden.</p></span
+        >
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/feed/" target="_blank">
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="bi bi-facebook fs-4"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
