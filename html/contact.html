@@ -16,6 +16,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -196,6 +209,26 @@
               </a>
             </li>
           </ul>
+          <div id="map"></div>
+          <script>
+            let map = L.map("map").setView([51.2399, 4.4212], 15);
+
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+              maxZoom: 19,
+              attribution:
+                '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            }).addTo(map);
+
+            let marker = L.marker([51.2399, 4.4212]).addTo(map);
+            marker
+              .bindPopup("<b>AP Hogeschool</b><br>Noorderlaan, Antwerpen.")
+              .openPopup();
+
+            let circle = L.circle([51.2399, 4.4212], {
+              className: "circle-style", // Voeg hier de CSS-klasse toe
+              radius: 300,
+            }).addTo(map);
+          </script>
         </aside>
       </div>
     </main>
@@ -209,7 +242,6 @@
           class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
         >
           <svg class="bi" width="30" height="24">
-            <!-- Corrected use of the Bootstrap icon -->
             <use href="#bootstrap"></use>
           </svg>
         </a>

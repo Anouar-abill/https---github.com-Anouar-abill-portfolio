@@ -16,6 +16,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -37,8 +50,8 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
+          
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -95,10 +108,15 @@
         </div>
       </div>
     </nav>
-    <header class="container my-2">
-      <h1>Welkom op mijn Portfolio!</h1>
-    </header>
 
+
+    <!-- <header class="container my-2">
+      <h1>Van Business naar Bits: <br> IT-Partner van de Toekomst</h1>
+    </header> -->
+
+    <header class="container my-2">
+      <h1>Van Business naar Bits: <br> IT-Partner van de toekomst</h1>
+    </header>
     <main class="container">
       <!-- Introductie sectie -->
       <section id="portfoliointro" class="row align-items-center">
@@ -121,17 +139,17 @@
           >
         </article>
 
-        <article class="col-12 col-md-4">
-          <figure>
+        <article class="col-12 col-md-4" id="foto-anouar" class="foto-item">
+          <figure id="figure-anouar">
             <img
               src="/assets/images/anouar foto.svg"
               alt="Foto van Anouar Abillouch"
               class="img-fluid"
               title="Foto van Anouar Abillouch"
             />
-            <figcaption class="h6 small mt-2">
+            <!-- <figcaption class="h6 small mt-2">
               &copy; Anouar Abillouch
-            </figcaption>
+            </figcaption> -->
           </figure>
         </article>
       </section>
