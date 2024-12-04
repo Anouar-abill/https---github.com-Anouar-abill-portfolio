@@ -29,7 +29,9 @@
       crossorigin=""
     ></script>
 
+    <link rel="stylesheet" href="/js/map.js" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -209,26 +211,15 @@
               </a>
             </li>
           </ul>
-          <div id="map"></div>
-          <script>
-            let map = L.map("map").setView([51.2399, 4.4212], 15);
 
-            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-              maxZoom: 19,
-              attribution:
-                '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-            }).addTo(map);
+          <h2 class="text-uppercase fs-5 fw-bolder pt-5">Adres</h2>
 
-            let marker = L.marker([51.2399, 4.4212]).addTo(map);
-            marker
-              .bindPopup("<b>AP Hogeschool</b><br>Noorderlaan, Antwerpen.")
-              .openPopup();
-
-            let circle = L.circle([51.2399, 4.4212], {
-              className: "circle-style", // Voeg hier de CSS-klasse toe
-              radius: 300,
-            }).addTo(map);
-          </script>
+          <section id="adres" class="row" class="col-lg-3">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=4.4044%2C51.2184%2C4.4244%2C51.2384&amp;layer=mapnik"
+              allowfullscreen
+            ></iframe>
+          </section>
         </aside>
       </div>
     </main>
