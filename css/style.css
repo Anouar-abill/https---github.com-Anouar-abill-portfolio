@@ -109,29 +109,3 @@ form button[type="submit"]:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
-
-/* Map styling */
-#map {
-  margin-top: 50px;
-  height: 400px;
-  border-radius: 3%;
-  z-index: 1; /* Z-index toegevoegd voor de kaart */
-}
-
-/* Circle styling */
-.circle-style {
-  stroke: blue; /* Kleur van de rand */
-  stroke-width: 4px; /* Dikte van de rand */
-  fill: rgb(0, 17, 255); /* Vullingskleur */
-  fill-opacity: 0.5; /* Opacity van de vulling */
-}
-
-/* Media query voor mobiele weergave */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Zorg ervoor dat de navigatie op kleinere schermen in een kolom wordt weergegeven */
-  }
-  #map {
-    height: 300px; /* Verklein de kaart op kleinere schermen */
-  }
-}

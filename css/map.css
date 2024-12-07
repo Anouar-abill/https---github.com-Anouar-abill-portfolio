@@ -1,0 +1,24 @@
+/* Map styling */
+#map {
+  margin-top: 20px; /* Voeg een marge toe aan de bovenkant voor wat ruimte */
+  height: 400px; /* Standaard hoogte van de kaart */
+  z-index: 1; /* Z-index voor de kaart, zodat deze boven andere elementen ligt */
+}
+
+/* Circle styling */
+.circle-style {
+  stroke: blue; /* Kleur van de rand van de cirkel */
+  stroke-width: 4px; /* Dikte van de rand */
+  fill: rgb(0, 17, 255); /* Vullingskleur van de cirkel */
+  fill-opacity: 0.5; /* Transparantie van de vulling */
+}
+
+/* Media query voor mobiele weergave */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Zet de navigatie in een verticale kolom voor kleinere schermen */
+  }
+  #map {
+    height: 300px; /* Verklein de hoogte van de kaart op kleinere schermen */
+  }
+}
