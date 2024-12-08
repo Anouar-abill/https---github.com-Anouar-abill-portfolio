@@ -123,12 +123,9 @@
         </div>
       </div>
     </nav>
-
     <!-- Header -->
-    <header class="bg-white text-black py-4">
-      <div class="container text-center">
-        <h1>Contacteer mij</h1>
-      </div>
+    <header class="container my-5">
+      <h1 class="mb-4">Contacteer mij</h1>
     </header>
 
     <!-- Main content -->
@@ -143,7 +140,15 @@
             te nemen via het onderstaande formulier.
           </p>
 
-          <form action="post" data-netlify="true">
+          <form
+            method="POST"
+            data-netlify="true"
+            name="contact"
+            action="/bedankt.html"
+          >
+            <!-- Netlify Anti-Spam -->
+            <input type="hidden" name="form-name" value="contact" />
+
             <div class="mb-3">
               <label for="name" class="form-label">Naam</label>
               <input
@@ -151,6 +156,7 @@
                 class="form-control"
                 id="name"
                 name="name"
+                placeholder="Vul je naam in"
                 required
               />
             </div>
@@ -162,6 +168,7 @@
                 class="form-control"
                 id="email"
                 name="email"
+                placeholder="Vul je e-mailadres in"
                 required
               />
             </div>
@@ -173,6 +180,7 @@
                 class="form-control"
                 id="subject"
                 name="subject"
+                placeholder="Typ het onderwerp"
                 required
               />
             </div>
@@ -184,12 +192,14 @@
                 id="message"
                 name="message"
                 rows="5"
+                placeholder="Typ je bericht hier"
                 required
               ></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Verstuur</button>
           </form>
+
           <p>
             Wij respecteren je privacy. De gegevens die je invult, worden alleen
             gebruikt om jouw vraag te beantwoorden.
@@ -233,42 +243,40 @@
       </div>
     </main>
 
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-custom"
-    >
-      <div class="col-md-4 d-flex align-items-center">
-        <a
-          href="/"
-          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-        >
-          <svg class="bi" width="30" height="24">
-            <use href="#bootstrap"></use>
-          </svg>
-        </a>
-        <p class="text-muted">
-          © <span id="year"></span> Anouar Abillouch. Alle rechten voorbehouden.
-        </p>
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com/feed/" target="_blank">
+    <hr />
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            class="nav-link text-body-secondary"
+          >
             <i class="bi bi-linkedin fs-4"></i>
           </a>
         </li>
-
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com" target="_blank">
+        <li class="nav-item">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="nav-link text-body-secondary"
+          >
             <i class="bi bi-instagram fs-4"></i>
           </a>
         </li>
-
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com" target="_blank">
+        <li class="nav-item">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="nav-link text-body-secondary"
+          >
             <i class="bi bi-facebook fs-4"></i>
           </a>
         </li>
       </ul>
+
+      <!-- Copyright -->
+      <p class="text-center text-body-secondary">© 2024 Anouar, Inc</p>
     </footer>
   </body>
 </html>
