@@ -13,30 +13,27 @@
 
 .navbar .nav-link {
   font-size: 1.25rem;
-  color: #f1a500;
+  color: #f1a500; /* Standaard kleur voor alle links */
   transition: color 0.3s ease;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: #ffffff;
+.navbar .nav-link:hover {
+  color: #ffffff; /* Kleur bij hover */
 }
 
-.navbar-toggler-icon {
-  background-color: #f1a500;
+#foto-anouar img {
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2); /* Schaduw aan linker- en onderkant */
+  max-width: 100%; /* Zorg dat de afbeelding responsief blijft */
+  height: auto;
+  display: block; /* Voorkomt ongewenste ruimte onder de afbeelding */
+  margin-top: -20px; /* Negatieve marge om de foto omhoog te schuiven */
 }
-
-/* Afbeelding styling */
-figure {
-  display: block;
-  margin: 20px 0; /* Eenvormige marges boven en onder */
-  border-radius: 5%;
-}
-
-img {
-  display: block;
-  border-radius: 5%;
-  max-width: 100%;
+/* Eenvoudige onderlijn voor hoofdheaders */
+h1 {
+  Padding-top: -2px;
+  border-bottom: 2px solid #007bff; /* Voeg een lijn toe onder de header */
+  padding-bottom: 5px; /* Ruimte tussen de tekst en de onderlijn */
+  margin-bottom: 20px; /* Ruimte onder de header */
 }
 
 /* Contactformulier */
