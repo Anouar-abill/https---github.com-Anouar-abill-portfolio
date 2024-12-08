@@ -139,16 +139,10 @@
             mijn vaardigheden en ervaring? Aarzel dan niet om contact met mij op
             te nemen via het onderstaande formulier.
           </p>
-
-          <form
-            method="POST"
-            data-netlify="true"
-            name="contact"
-            action="/bedankt.html"
-          >
+          <form method="POST" data-netlify="true" name="contact" id="contact-form">
             <!-- Netlify Anti-Spam -->
             <input type="hidden" name="form-name" value="contact" />
-
+          
             <div class="mb-3">
               <label for="name" class="form-label">Naam</label>
               <input
@@ -160,7 +154,7 @@
                 required
               />
             </div>
-
+          
             <div class="mb-3">
               <label for="email" class="form-label">E-mail</label>
               <input
@@ -172,7 +166,7 @@
                 required
               />
             </div>
-
+          
             <div class="mb-3">
               <label for="subject" class="form-label">Onderwerp</label>
               <input
@@ -184,7 +178,7 @@
                 required
               />
             </div>
-
+          
             <div class="mb-3">
               <label for="message" class="form-label">Bericht</label>
               <textarea
@@ -196,7 +190,7 @@
                 required
               ></textarea>
             </div>
-
+          
             <button type="submit" class="btn btn-primary">Verstuur</button>
           </form>
 
