@@ -13,7 +13,7 @@
 
 .navbar .nav-link {
   font-size: 1.25rem;
-  color: #f1a500; /* Standaard kleur voor alle links */
+  color: #ffffff; /* Standaard kleur voor alle links */
   transition: color 0.3s ease;
 }
 
@@ -21,13 +21,14 @@
   color: #ffffff; /* Kleur bij hover */
 }
 
-#foto-anouar img {
+/* #foto-anouar img {
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2); /* Schaduw aan linker- en onderkant */
-  max-width: 100%; /* Zorg dat de afbeelding responsief blijft */
-  height: auto;
+  /* max-width: 100%; /* Zorg dat de afbeelding responsief blijft */
+  /* height: auto;
   display: block; /* Voorkomt ongewenste ruimte onder de afbeelding */
-  margin-top: -20px; /* Negatieve marge om de foto omhoog te schuiven */
-}
+  /* margin-top: -20px; /* Negatieve marge om de foto omhoog te schuiven */
+  /* border-radius: 10px; */
+/* } */ 
 /* Eenvoudige onderlijn voor hoofdheaders */
 h1 {
   Padding-top: -2px;
