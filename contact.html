@@ -142,75 +142,71 @@
                 </p>
               </div>
 
-              <form name="contact" method="POST" data-netlify="true">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="name" class="form-label">Naam</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Vul je naam in"
-                      required
-                    />
-                    <div class="invalid-feedback">Naam is verplicht.</div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="lastname" class="form-label">Achternaam</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lastname"
-                      placeholder="Vul je achternaam in"
-                      required
-                    />
-                    <div class="invalid-feedback">Achternaam is verplicht.</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Vul je e-mailadres in"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Vul een geldig e-mailadres in.
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="subject" class="form-label">Onderwerp</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Typ het onderwerp"
-                      required
-                    />
-                    <div class="invalid-feedback">Onderwerp is verplicht.</div>
-                  </div>
-                </div>
+              <form
+              method="POST"
+              data-netlify="true"
+              name="contact"
+              id="contact-form"
+            >
 
-                <div class="mb-3">
-                  <label for="message" class="form-label">Bericht</label>
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    placeholder="Typ je bericht hier"
-                    required
-                    rows="5"
-                  ></textarea>
-                  <div class="invalid-feedback">
-                    Bericht mag niet leeg zijn.
-                  </div>
-                </div>
-                <button class="btn btn-primary w-10" type="submit">
-                  Verstuur
-                </button>
-              </form>
+              <input type="hidden" name="form-name" value="contact" />
+  
+              <div class="mb-3">
+                <label for="name" class="form-label">Naam</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Vul je naam in"
+                  required
+                />
+              </div>
+  
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Vul je e-mailadres in"
+                  required
+                />
+              </div>
+  
+              <div class="mb-3">
+                <label for="subject" class="form-label">Onderwerp</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  placeholder="Typ het onderwerp"
+                  required
+                />
+              </div>
+  
+              <div class="mb-3">
+                <label for="message" class="form-label">Bericht</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Typ je bericht hier"
+                  required
+                ></textarea>
+              </div>
+  
+              <button type="submit" class="btn btn-primary">Verstuur</button>
+            </form>
+  
+            <p>
+              Wij respecteren je privacy. De gegevens die je invult, worden alleen
+              gebruikt om jouw vraag te beantwoorden.
+            </p>
+          </div>
             </article>
           </section>
         </div>
