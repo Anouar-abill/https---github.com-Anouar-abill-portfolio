@@ -38,7 +38,7 @@ h1 {
 }
 
 /* Contactformulier */
-form .form-control {
+/* form .form-control {
   padding: 12px;
   font-size: 1rem;
   border-radius: 6px;
@@ -68,7 +68,7 @@ form button[type="submit"]:hover {
 form button[type="submit"]:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-}
+} */
 
 /* Footer icon styling */
 footer .nav-link i {

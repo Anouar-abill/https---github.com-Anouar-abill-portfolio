@@ -81,7 +81,7 @@
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/index.html"
-                >Startpagina</a
+                >home</a
               >
             </li>
             <li class="nav-item">
@@ -123,126 +123,148 @@
         </div>
       </div>
     </nav>
-    <!-- Header -->
     <header class="container my-5">
       <h1 class="mb-4">Contacteer mij</h1>
     </header>
 
-    <!-- Main content -->
-    <main class="container py-5">
+    <div class="container my-5">
       <div class="row">
-        <!-- Linkerkant: Invulformulier -->
-        <div class="col-md-6 p-4 border-end">
-          <h2>Vul het formulier in</h2>
-          <p>
-            Ben je geïnteresseerd in een samenwerking of wil je meer weten over
-            mijn vaardigheden en ervaring? Aarzel dan niet om contact met mij op
-            te nemen via het onderstaande formulier.
-          </p>
-          <form
-            method="POST"
-            data-netlify="true"
-            name="contact"
-            id="contact-form"
-          >
-            <!-- Netlify Anti-Spam -->
-            <input type="hidden" name="form-name" value="contact" />
+        <!-- Form Section: 2/3 -->
+        <div class="col-md-9">
+          <section id="contacteer" class="row align-items-center">
+            <article class="col-12">
+              <div class="text-left">
+                <h2>Vul het formulier in</h2>
+                <p>
+                  Ben je geïnteresseerd in een samenwerking of wil je meer weten
+                  over mijn vaardigheden en ervaring? Aarzel dan niet om contact
+                  met mij op te nemen via het onderstaande formulier.
+                </p>
+              </div>
+              <form class="needs-validation" novalidate>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Naam</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Vul je naam in"
+                      required
+                    />
+                    <div class="invalid-feedback">Naam is verplicht.</div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastname" class="form-label">Achternaam</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastname"
+                      placeholder="Vul je achternaam in"
+                      required
+                    />
+                    <div class="invalid-feedback">Achternaam is verplicht.</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Vul je e-mailadres in"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Vul een geldig e-mailadres in.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="subject" class="form-label">Onderwerp</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Typ het onderwerp"
+                      required
+                    />
+                    <div class="invalid-feedback">Onderwerp is verplicht.</div>
+                  </div>
+                </div>
 
-            <div class="mb-3">
-              <label for="name" class="form-label">Naam</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Vul je naam in"
-                required
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Vul je e-mailadres in"
-                required
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="subject" class="form-label">Onderwerp</label>
-              <input
-                type="text"
-                class="form-control"
-                id="subject"
-                name="subject"
-                placeholder="Typ het onderwerp"
-                required
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="message" class="form-label">Bericht</label>
-              <textarea
-                class="form-control"
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Typ je bericht hier"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Verstuur</button>
-          </form>
-
-          <p>
-            Wij respecteren je privacy. De gegevens die je invult, worden alleen
-            gebruikt om jouw vraag te beantwoorden.
-          </p>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Bericht</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    placeholder="Typ je bericht hier"
+                    required
+                    rows="5"
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Bericht mag niet leeg zijn.
+                  </div>
+                </div>
+                <button class="btn btn-primary w-10" type="submit">
+                  Verstuur
+                </button>
+              </form>
+            </article>
+          </section>
         </div>
 
-        <aside class="col-md-6 p-4">
-          <h2>Contactgegevens</h2>
-          <p>
-            <i class="bi bi-telephone-fill fs-5 me-2 text-primary"></i> +32
-            486260395<br />
-            <i class="bi bi-envelope-fill fs-5 me-2 text-primary"></i>
-            <a href="mailto:Anouar.abillouch@gmail.com" class="text-primary"
-              >Anouar.abillouch@gmail.com</a
-            >
-          </p>
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/feed/" target="_blank">
-                <i class="bi bi-linkedin fs-4"></i>
+        <!-- Aside: 1/3 -->
+        <aside class="col-md-3 border-start ps">
+          <div class="p-3 bg-light text-left">
+            <h4>Contactinformatie</h4>
+            <!-- Telefoon -->
+            <p class="d-flex align-items-left justify-content-left gap-2">
+              <i class="bi bi-telephone-fill fs-4 text-primary"></i>
+              <a href="tel:+32486260395" class="text-decoration-none text-dark">
+                +32 486 260 395
               </a>
-            </li>
-
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com" target="_blank">
-                <i class="bi bi-instagram fs-4"></i>
+            </p>
+            <!-- E-mail -->
+            <p class="d-flex align-items-left justify-content-left gap-2">
+              <i class="bi bi-envelope-fill fs-4 text-primary"></i>
+              <a
+                href="mailto:Anouar.abillouch@gmail.com"
+                class="text-decoration-none text-dark"
+              >
+                Anouar.abillouch@gmail.com
               </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com" target="_blank">
-                <i class="bi bi-facebook fs-4"></i>
+            </p>
+            <h5>Social Media</h5>
+            <!-- Sociale Media Iconen -->
+            <div class="d-flex justify-content-left gap-2">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="bi bi-linkedin fs-4 text-primary"></i>
               </a>
-            </li>
-          </ul>
-
-          <h2 class="text-uppercase fs-5 fw-bolder pt-5">Adres</h2>
-          <section>
-            <div id="map"></div>
-          </section>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="bi bi-instagram fs-4 text-primary"></i>
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="bi bi-facebook fs-4 text-primary"></i>
+              </a>
+            </div>
+          </div>
+          <div id="map"></div>
         </aside>
       </div>
-    </main>
-    
-
+    </div>
     <hr />
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center mb-3">

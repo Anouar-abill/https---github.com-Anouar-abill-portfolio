@@ -1,7 +1,7 @@
 /* Map styling */
 #map {
   margin-top: 20px; /* Voeg een marge toe aan de bovenkant voor wat ruimte */
-  height: 400px; /* Standaard hoogte van de kaart */
+  height: 250px; /* Standaard hoogte van de kaart */
   z-index: 1; /* Z-index voor de kaart, zodat deze boven andere elementen ligt */
 }
 
