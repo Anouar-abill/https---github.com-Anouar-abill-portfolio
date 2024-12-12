@@ -150,9 +150,14 @@
                       type="text"
                       class="form-control"
                       id="name"
-                      placeholder="Vul je naam in"
-                      required
+                      name="name"
+                      <!--
+                      name
+                      attribute
+                      toegevoegd
+                      --
                     />
+                    placeholder="Vul je naam in" required />
                     <div class="invalid-feedback">Naam is verplicht.</div>
                   </div>
                   <div class="col-md-6 mb-3">
@@ -161,9 +166,14 @@
                       type="text"
                       class="form-control"
                       id="lastname"
-                      placeholder="Vul je achternaam in"
-                      required
+                      name="lastname"
+                      <!--
+                      name
+                      attribute
+                      toegevoegd
+                      --
                     />
+                    placeholder="Vul je achternaam in" required />
                     <div class="invalid-feedback">Achternaam is verplicht.</div>
                   </div>
                 </div>
@@ -174,9 +184,14 @@
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="Vul je e-mailadres in"
-                      required
+                      name="email"
+                      <!--
+                      name
+                      attribute
+                      toegevoegd
+                      --
                     />
+                    placeholder="Vul je e-mailadres in" required />
                     <div class="invalid-feedback">
                       Vul een geldig e-mailadres in.
                     </div>
@@ -187,9 +202,14 @@
                       type="text"
                       class="form-control"
                       id="subject"
-                      placeholder="Typ het onderwerp"
-                      required
+                      name="subject"
+                      <!--
+                      name
+                      attribute
+                      toegevoegd
+                      --
                     />
+                    placeholder="Typ het onderwerp" required />
                     <div class="invalid-feedback">Onderwerp is verplicht.</div>
                   </div>
                 </div>
@@ -199,10 +219,18 @@
                   <textarea
                     class="form-control"
                     id="message"
+                    name="message"
+                    <!--
+                    name
+                    attribute
+                    toegevoegd
+                    --
+                  >
                     placeholder="Typ je bericht hier"
                     required
                     rows="5"
-                  ></textarea>
+                  ></textarea
+                  >
                   <div class="invalid-feedback">
                     Bericht mag niet leeg zijn.
                   </div>
