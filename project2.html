@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webwiz</title>
+    <title>project</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,28 +16,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid d-flex justify-content-center">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/index.html">
           <img
-            src="assets/images/logo.svg"
+            src="/assets/images/logo.svg"
             alt="logo"
             width="100"
             height="100"
@@ -61,7 +48,9 @@
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">home</a>
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/portfolio.html">portfolio</a>
@@ -96,171 +85,250 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">contact</a>
+              <a class="nav-link" href="/html/contact.html">contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <header class="container my-5">
-      <h1 class="mb-4 text-center">Webwiz Netwerktransformatie</h1>
-    </header>
-    <header class="container my-5">
-      <h1 class="mb-4 text-center">Webwiz Netwerktransformatie</h1>
+
+    <header class="container my-5 text-center">
+      <h1>Bachelorproef</h1>
     </header>
 
-    <div class="container my-5">
-      <!-- Block 1 -->
-      <div class="row mb-5">
-        <div class="col-md-6">
-          <h2 class="mb-3">Projectoverzicht</h2>
-          <p class="lead">
-            Voor Webwiz heb ik een inefficiënt netwerk met slechte Wi-Fi-dekking
-            en chaotische bekabeling getransformeerd in een toekomstbestendig en
-            betrouwbaar netwerk.
-          </p>
-          <h4 class="mt-4">Doelen</h4>
-          <ul>
-            <li>Een stabiel en schaalbaar netwerk realiseren.</li>
-            <li>Wi-Fi-dekking en bedrade werkplekken verbeteren.</li>
-            <li>Netwerkapparatuur veilig en centraal plaatsen.</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <figure class="text-center">
-            <img
-              src="/assets/images/schets.jpg"
-              alt="Projectoverzicht"
-              class="img-fluid rounded shadow-sm w-75"
-            />
-            <figcaption class="text-center mt-2">
-              Visueel overzicht van het project
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+    <main class="container my-5">
+      <section class="row mb-4">
+        <article class="col-md-12">
+          <section class="p-4 border bg-light">
+            <h2>Introductie van het onderzoek</h2>
 
-      <!-- Block 2 -->
-      <div class="row mb-5">
-        <div class="col-md-6 order-md-2">
-          <h2 class="mb-4">Mijn Rol en Aanpak</h2>
-          <h4 class="mb-3">Mijn Rol</h4>
-          <p>
-            Ik was verantwoordelijk voor het ontwerpen van het netwerkplan, het
-            implementeren van de bekabelingsinfrastructuur, en het opstellen van
-            duidelijke documentatie voor toekomstig beheer.
-          </p>
-          <h4 class="mt-4 mb-3">Mijn Aanpak</h4>
-          <ul>
-            <li>Netwerkontwerp uitgevoerd met Packet Tracer.</li>
-            <li>Bekabeling en installatie nauwkeurig gepland en uitgevoerd.</li>
-            <li>
-              Infrastructuur beveiligd en duidelijke documentatie opgesteld.
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6 order-md-1">
-          <div
-            id="projectCarousel"
-            class="carousel slide mt-5"
-            data-bs-ride="carousel"
+            <figure class="mb-3">
+              <img
+                src="/assets/images/schets.jpg"
+                alt="Beschrijving van de afbeelding"
+                class="img-fluid"
+              />
+              <figcaption>Beschrijving van de afbeelding</figcaption>
+            </figure>
+
+            <p>
+              Voor mijn bachelorproef binnen de richting Bedrijfskunde heb ik
+              gekozen voor een onderzoeksproject dat nauw verbonden is met mijn
+              stage bij B-Tonic, een dochteronderneming van Baloise Groep. Het
+              thema van het onderzoek betreft ESG-rapportages, met specifieke
+              focus op de sociale aspecten binnen ESG (Environmental, Social,
+              Governance). De centrale vraag die ik onderzocht heb is: "Hoe
+              brengen bedrijven een gestructureerd ESG-rapport tot stand, met
+              een specifieke focus op de sociale aspecten binnen ESG, en hoe kan
+              B-Tonic hierop inspelen om hun tools en processen te verbeteren en
+              meer leads binnen te krijgen?
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="row mb-4">
+        <article class="col-md-12">
+          <section class="p-4 border bg-light">
+            <h2>Onderzoeksopzet</h2>
+
+            <figure class="mb-3">
+              <img
+                src="/assets/images/schets.jpg"
+                alt="Beschrijving van de afbeelding"
+                class="img-fluid"
+              />
+              <figcaption>Beschrijving van de afbeelding</figcaption>
+            </figure>
+
+            <p>
+              Het onderzoek begon met een uitgebreide deskresearch om de
+              bestaande literatuur en studies over ESG-rapportages te
+              verzamelen. Dit gaf me de theoretische basis die ik nodig had om
+              het onderwerp goed te begrijpen en te kaderen. ESG-rapporten
+              worden steeds belangrijker voor bedrijven die duurzaamheid willen
+              integreren in hun bedrijfsvoering, en mijn onderzoek richtte zich
+              met name op het sociale aspect binnen ESG.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="row mb-4">
+        <article class="col-md-12">
+          <section class="p-4 border bg-light">
+            <h2>Kwalitatief onderzoek</h2>
+
+            <figure class="mb-3">
+              <img
+                src="/assets/images/schets.jpg"
+                alt="Beschrijving van de afbeelding"
+                class="img-fluid"
+              />
+              <figcaption>Beschrijving van de afbeelding</figcaption>
+            </figure>
+
+            <p>
+              Aangezien het onderzoek diepgaande inzichten vereiste, koos ik
+              voor een kwalitatieve onderzoeksaanpak. Dit betekende dat ik
+              interviews moest afnemen bij bedrijven die al werken met
+              ESG-rapportages. Hiervoor ontwikkelde ik een interviewleidraad die
+              ik kon gebruiken om gerichte gesprekken te voeren. De doelgroepen
+              waren bedrijven die al ervaring hadden met ESG, en ik interviewde
+              uiteindelijk zes bedrijven om zoveel mogelijk waardevolle
+              informatie te verzamelen.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="row mb-4">
+        <article class="col-md-12">
+          <section class="p-4 border bg-light">
+            <h2>Het Interviewproces</h2>
+
+            <figure class="mb-3">
+              <img
+                src="/assets/images/schets.jpg"
+                alt="Beschrijving van de afbeelding"
+                class="img-fluid"
+              />
+              <figcaption>Beschrijving van de afbeelding</figcaption>
+            </figure>
+
+            <p>
+              Het was mijn taak om bedrijven te recruteren die bereid waren om
+              mee te werken aan het onderzoek. Na het verkrijgen van
+              toestemming, voerde ik zes diepgaande interviews. De interviews
+              hadden in totaal een lengte van zes uur, wat resulteerde in
+              waardevolle gegevens. Ik sprak met experts op het gebied van ESG
+              en kreeg inzicht in hun uitdagingen, processen en hoe zij sociale
+              aspecten binnen hun ESG-rapportages meenemen.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="row mb-4">
+        <article class="col-md-12">
+          <section class="p-4 border bg-light">
+            <h2>Transcripties en data-analyse</h2>
+
+            <figure class="mb-3">
+              <img
+                src="/assets/images/schets.jpg"
+                alt="Beschrijving van de afbeelding"
+                class="img-fluid"
+              />
+              <figcaption>Beschrijving van de afbeelding</figcaption>
+            </figure>
+
+            <p>
+              Na het afnemen van de interviews begon het echte werk. Alle
+              interviews moesten worden getranscribeerd, wat resulteerde in uren
+              aan tekst die ik moest verwerken. Vervolgens heb ik de
+              transcripties georganiseerd in een Excel-bestand, waar ik de
+              antwoorden van de respondenten verticaal en axiaal verwerkte. Dit
+              stelde me in staat om patronen en gemeenschappelijke antwoorden te
+              identificeren, evenals de verschillen tussen de bedrijven.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="row mb-4">
+        <article class="col-md-12">
+          <section class="p-4 border bg-light">
+            <h2>Rapportage en presentatie</h2>
+
+            <figure class="mb-3">
+              <img
+                src="/assets/images/schets.jpg"
+                alt="Beschrijving van de afbeelding"
+                class="img-fluid"
+              />
+              <figcaption>Beschrijving van de afbeelding</figcaption>
+            </figure>
+
+            <p>
+              Na het analyseren van de gegevens, was het tijd om de bevindingen
+              in een rapport te verwerken. Dit rapport bevatte niet alleen de
+              conclusies van mijn onderzoek, maar ook aanbevelingen voor B-Tonic
+              om hun tools en processen te verbeteren. Uiteindelijk werd het
+              rapport gepresenteerd aan een jury van zowel mijn docenten als de
+              medewerkers van B-Tonic. Het was een waardevolle ervaring om mijn
+              bevindingen te verdedigen en vragen van de jury te beantwoorden,
+              waarbij ik mijn onderzoeksresultaten verder kon toelichten.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="row mb-4">
+        <article class="col-md-12">
+          <section class="p-4 border bg-light">
+            <h2>Resultaten van het onderzoek</h2>
+
+            <figure class="mb-3">
+              <img
+                src="/assets/images/schets.jpg"
+                alt="Beschrijving van de afbeelding"
+                class="img-fluid"
+              />
+              <figcaption>Beschrijving van de afbeelding</figcaption>
+            </figure>
+
+            <p>
+              De resultaten van het onderzoek waren deels te verwachten. Uit het
+              onderzoek bleek dat duurzaamheid voor veel bedrijven in
+              verschillende sectoren nog steeds een lagere prioriteit heeft dan
+              andere financiële aspecten. Dit verklaart waarom bedrijven vaak
+              geen rapportages maken over duurzaamheid. Echter, door de opkomst
+              van nieuwe Europese regels, is het nu duidelijk dat bedrijven
+              vanaf 2025 verplicht zijn om jaarlijks een ESG-rapportage te
+              publiceren over duurzaamheid. Deze verandering zal waarschijnlijk
+              de manier waarop bedrijven met duurzaamheid omgaan ingrijpend
+              beïnvloeden, en tegelijkertijd de rol van ESG-rapportages
+              versterken.
+            </p>
+          </section>
+        </article>
+      </section>
+    </main>
+    <hr />
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            class="nav-link text-body-secondary"
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="/assets/images/carousel-1.jpg"
-                  class="d-block w-100"
-                  alt="Schets 1"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Ontwerpfase</h5>
-                  <p>Illustratie van het netwerkontwerp.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/images/carousel-2.jpg"
-                  class="d-block w-100"
-                  alt="Schets 2"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Installatiefase</h5>
-                  <p>Visueel overzicht van de bekabeling.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/images/carousel-3.jpg"
-                  class="d-block w-100"
-                  alt="Schets 3"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Afgerond Project</h5>
-                  <p>Resultaten na implementatie.</p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#projectCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Vorige</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#projectCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Volgende</span>
-            </button>
-          </div>
-        </div>
-      </div>
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="nav-link text-body-secondary"
+          >
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="nav-link text-body-secondary"
+          >
+            <i class="bi bi-facebook fs-4"></i>
+          </a>
+        </li>
+      </ul>
 
-      <!-- Block 3 -->
-      <div class="row mb-5">
-        <div class="col-md-6">
-          <h2 class="mb-4">Resultaten en Impact</h2>
-          <h4 class="mb-3">100% Stabiele Verbindingen</h4>
-          <p>
-            Alle 24 werkplekken zijn voorzien van betrouwbare, bedrade
-            netwerkaansluitingen.
-          </p>
-          <h4 class="mt-4 mb-3">Verbeterde Wi-Fi-dekking</h4>
-          <p>
-            Betrouwbare verbindingen in alle zes kantoren dankzij een
-            geoptimaliseerde infrastructuur.
-          </p>
-          <h4 class="mt-4 mb-3">Klaar voor Uitbreidingen</h4>
-          <p>
-            Het netwerk is ontworpen voor eenvoudige uitbreidingen, afgestemd op
-            toekomstige bedrijfsbehoeften.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <figure class="text-center my-4">
-            <img
-              src="/assets/images/schets.jpg"
-              alt="Netwerkimplementatie"
-              class="img-fluid rounded shadow-sm w-75"
-            />
-            <figcaption class="text-center mt-2">
-              Foto van de netwerkimplementatie
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
+      <!-- Copyright -->
+      <p class="text-center text-body-secondary">© 2024 Anouar, Inc</p>
+    </footer>
   </body>
 </html>

@@ -1,81 +1,82 @@
 /* Navbar styling */
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem; /* Ruimte tussen de elementen */
-  width: 100%;
-  background-color: #0e025c;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar .nav-link {
-  font-size: 1.25rem;
-  color: #ffffff; /* Standaard kleur voor alle links */
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-  color: #ffffff; /* Kleur bij hover */
-}
-
-/* #foto-anouar img {
-  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2); /* Schaduw aan linker- en onderkant */
-  /* max-width: 100%; /* Zorg dat de afbeelding responsief blijft */
-  /* height: auto;
-  display: block; /* Voorkomt ongewenste ruimte onder de afbeelding */
-  /* margin-top: -20px; /* Negatieve marge om de foto omhoog te schuiven */
-  /* border-radius: 10px; */
-/* } */ 
-/* Eenvoudige onderlijn voor hoofdheaders */
-h1 {
-  Padding-top: -2px;
-  border-bottom: 2px solid #007bff; /* Voeg een lijn toe onder de header */
-  padding-bottom: 5px; /* Ruimte tussen de tekst en de onderlijn */
-  margin-bottom: 20px; /* Ruimte onder de header */
-}
-
-/* Contactformulier */
-/* form .form-control {
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 6px;
-  margin-bottom: 15px;
-  border: 1px solid #ced4da;
-}
-
-form .form-label {
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-form button[type="submit"] {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 6px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-form button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-form button[type="submit"]:focus {
-  outline: none;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-} */
-
-/* Footer icon styling */
-footer .nav-link i {
-  color: #007bff; /* Standaard blauwe kleur */
-  transition: color 0.3s ease;
-}
-
-footer .nav-link i:hover {
-  color: #0056b3; /* Donkerder blauw bij hover */
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Ruimte tussen de elementen */
+    width: 100%;
+    background-color: #0e025c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .nav-link {
+    font-size: 1.25rem;
+    color: #ffffff; /* Standaard kleur voor alle links */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ffffff; /* Kleur bij hover */
+  }
+  
+  /* #foto-anouar img {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2); /* Schaduw aan linker- en onderkant */
+    /* max-width: 100%; /* Zorg dat de afbeelding responsief blijft */
+    /* height: auto;
+    display: block; /* Voorkomt ongewenste ruimte onder de afbeelding */
+    /* margin-top: -20px; /* Negatieve marge om de foto omhoog te schuiven */
+    /* border-radius: 10px; */
+  /* } */ 
+  /* Eenvoudige onderlijn voor hoofdheaders */
+  h1 {
+    Padding-top: -2px;
+    border-bottom: 2px solid #007bff; /* Voeg een lijn toe onder de header */
+    padding-bottom: 5px; /* Ruimte tussen de tekst en de onderlijn */
+    margin-bottom: 20px; /* Ruimte onder de header */
+  }
+  
+  /* Contactformulier */
+  /* form .form-control {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+  }
+  
+  form .form-label {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  form button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  } */
+  
+  /* Footer icon styling */
+  footer .nav-link i {
+    color: #007bff; /* Standaard blauwe kleur */
+    transition: color 0.3s ease;
+  }
+  
+  footer .nav-link i:hover {
+    color: #0056b3; /* Donkerder blauw bij hover */
+  }
+  
