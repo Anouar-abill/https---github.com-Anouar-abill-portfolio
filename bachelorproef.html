@@ -27,7 +27,9 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -287,15 +289,13 @@
 
     <hr />
 
-    <footer class="py-2 bg-light">
+    <footer class="py-2">
       <ul class="nav justify-content-center mb-3">
         <li class="nav-item">
           <a
             href="https://www.linkedin.com"
             target="_blank"
-            rel="noopener noreferrer"
             class="nav-link text-body-secondary"
-            aria-label="LinkedIn profiel"
           >
             <i class="bi bi-linkedin fs-4"></i>
           </a>
@@ -304,9 +304,7 @@
           <a
             href="https://www.instagram.com"
             target="_blank"
-            rel="noopener noreferrer"
             class="nav-link text-body-secondary"
-            aria-label="Instagram profiel"
           >
             <i class="bi bi-instagram fs-4"></i>
           </a>
@@ -315,16 +313,16 @@
           <a
             href="https://www.facebook.com"
             target="_blank"
-            rel="noopener noreferrer"
             class="nav-link text-body-secondary"
-            aria-label="Facebook profiel"
           >
             <i class="bi bi-facebook fs-4"></i>
           </a>
         </li>
       </ul>
-      <p class="text-center text-body-secondary mb-0">
-        © 2024 Lorem Ipsum, Inc
+
+      <!-- Copyright -->
+      <p class="text-center text-body-secondary">
+        © <span id="year"></span> Anouar, Alle rechten voorbehouden
       </p>
     </footer>
   </body>

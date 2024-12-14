@@ -154,3 +154,40 @@ aside i {
   color: #000000;
   padding: 10px;
 }
+/* Algemene styling voor de carousel */
+#projectCarousel {
+  position: relative;
+  background-color: #f8f9fa; /* Lichte achtergrondkleur */
+  border-radius: 8px; /* Ronde hoeken */
+  overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten het frame valt */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+}
+
+/* Styling voor figcaption */
+.carousel-item figcaption {
+  padding: 10px;
+  background-color: #ffffff; /* Witte achtergrond */
+  color: #333; /* Donkere tekstkleur */
+  font-size: 14px;
+  text-align: center;
+  font-style: italic; /* Optionele stijl voor onderschriften */
+  border-top: 1px solid #ddd; /* Scheiding boven figcaption */
+}
+
+/* Styling voor navigatieknoppen */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Smalle knoppen */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparante achtergrond */
+  border: none; /* Geen rand */
+  outline: none; /* Geen focusstijl */
+}
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    font-size: 1rem;
+  }
+
+  #projectCarousel {
+    box-shadow: none; /* Verminder schaduw op kleinere schermen */
+  }
+}
