@@ -101,6 +101,15 @@ p {
   background-color: #ffffff;
   border-radius: 8px;
 }
+#over-mij figure img {
+  border-radius: 6px;
+}
+#projecten-inhoud figure img {
+
+  border-radius: 6px; /* Afgeronde hoeken */
+ 
+}
+
 
 /* Stijl voor knoppen */
 .btn {
