@@ -46,6 +46,20 @@
   background-color: #1a087a;
   border-radius: 5px;
 }
+/* Zorg ervoor dat de hamburger-toggler-icon wit blijft */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Voeg een hover-effect toe voor visuele feedback */
+.navbar-toggler:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Subtiele achtergrond bij hover */
+}
 
 /* Stijl voor kopteksten */
 h1,
@@ -111,6 +125,10 @@ p {
 i {
   color: #0e025c;
   transition: color 0.3s ease;
+}
+/* Zorg dat de iconen in de aside dezelfde kleur krijgen als de navigatiebalk */
+aside i {
+  color: #0e025c;
 }
 
 /* Stijl voor projecten secties */
