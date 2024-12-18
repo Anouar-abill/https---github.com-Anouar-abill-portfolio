@@ -58,7 +58,7 @@
     255,
     255,
     0.1
-  ); /* Subtiele achtergrond bij hover */
+  ); 
 }
 
 /* Stijl voor kopteksten */
@@ -163,21 +163,21 @@ aside i {
 /* Algemene styling voor de carousel */
 #projectCarousel {
   position: relative;
-  background-color: #f8f9fa; /* Lichte achtergrondkleur */
-  border-radius: 8px; /* Ronde hoeken */
+  background-color: #f8f9fa; 
+  border-radius: 8px; 
   overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten het frame valt */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Styling voor figcaption */
 .carousel-item figcaption {
   padding: 10px;
-  background-color: #ffffff; /* Witte achtergrond */
-  color: #333; /* Donkere tekstkleur */
+  background-color: #ffffff; 
+  color: #333; 
   font-size: 14px;
   text-align: center;
-  font-style: italic; /* Optionele stijl voor onderschriften */
-  border-top: 1px solid #ddd; /* Scheiding boven figcaption */
+  font-style: italic; 
+  border-top: 1px solid #ddd; 
 }
 
 /* Styling voor navigatieknoppen */
@@ -194,6 +194,6 @@ aside i {
   }
 
   #projectCarousel {
-    box-shadow: none; /* Verminder schaduw op kleinere schermen */
+    box-shadow: none; 
   }
 }
